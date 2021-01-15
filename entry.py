@@ -74,7 +74,7 @@ def id_Gen(fname, lname, curTime):
     pdf.add_page()
 
     #pdf.image(R'E:\logo.png', w = 35, h = 11)
-    pdf.image(os.getcwd()+'\logo.png', w=35, h=11)
+    pdf.image(os.getcwd()+'/logo.png', w=35, h=11)
     pdf.set_font("Arial", size=22)
     pdf.cell(0, 17, txt="VISITOR PASS", ln=1, align="C")
     pdf.set_font("Arial", size=22)
@@ -86,9 +86,9 @@ def id_Gen(fname, lname, curTime):
     pdf.set_line_width(.5)
     pdf.set_draw_color(255, 0, 0)
     pdf.line(5, 15, 97, 15)
-    pdf.output(os.getcwd()+"\entry.pdf")
+    pdf.output(os.getcwd()+"/entry.pdf")
 
-#     os.startfile(R"G:\1_14 Guest Login\printer\entry.pdf", "print")
+    os.system('lp entry.pdf')
 
 #     time.sleep(5)
 #     print('Killing Adobe')
