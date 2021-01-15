@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Goode Visitor</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{ url_for('static',filename='images/icons/favicon.ico/')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+	<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/animate/animate.css')}}">
+	<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+	<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/select2/select2.min.css')}}">
+	<!--===============================================================================================-->
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css')}}">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+	<div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form" method="post" action='/'>
+					<span class="contact2-form-title">
+						Visitor Sign In
+					</span>
+
+					<div class="wrap-input2 validate-input" data-validate="First Name is Required">
+						<input class="input2" type="text" name="fname" autofocus>
+						<span class="focus-input2" data-placeholder="First Name/Nombre"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate="Last Name is Required">
+						<input class="input2" type="text" name="lname">
+						<span class="focus-input2" data-placeholder="Last Name/Apellido"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate="Purpose is required">
+						<textarea class="input2" name="purpose"></textarea>
+						<span class="focus-input2" data-placeholder="Purpose of Visit/Razon para la Visita"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Generate Pass
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+
+</html>

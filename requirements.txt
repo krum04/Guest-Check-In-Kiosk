@@ -1,0 +1,4 @@
+flask
+fpdf
+gspread
+oauth2client
